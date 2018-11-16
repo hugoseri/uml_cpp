@@ -13,15 +13,18 @@ using namespace std;
 
 class Student{
 public:
-Student(string Na="", string fNa="", string logID=""){Name = Na; firstName=fNa; loginID=logID ;nbCoursesChosen=0;}
+    Student( string stID="",string fNa="", string Na="",string logID="", string logPSD=""){studentID=stID;Name = Na; firstName=fNa; loginID=logID ;nbCoursesChosen=0; loginPSD=logPSD;}
     void printChosenCourses()const;
     void addCourses(Course *newCourse);
     void removeCourses(string IDtoRemove);
     string getName()const{return Name;}
+    bool courseIdInCourseChosen(string courseID);
 private:
+    string studentID;
     string Name;
     string firstName;
     string loginID;
+    string loginPSD;
     Course *coursesChosen[4];
     int nbCoursesChosen;
 };

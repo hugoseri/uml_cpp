@@ -5,8 +5,9 @@ void Course::printCourse() const {
     cout<<"ID :"<<ID<<endl;
     cout<<"Title : "<< title<<endl;
     cout<<"Capacity : "<<capacity<<endl;
+    cout<<"Teacher : "<<teacher<<endl;
+    cout<<"Location : "<<location<<endl;
     cout<<"Student(s) registered : "<< nbRegisterStudent<<endl;
-    cout<<"Description : "<<description<<endl;
 }
 
 void Course::updatePlaces() {

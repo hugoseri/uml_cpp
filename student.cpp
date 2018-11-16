@@ -33,3 +33,13 @@ void Student::removeCourses(string IDtoRemove) {
         nbCoursesChosen--;
     }
 }
+
+bool Student::courseIdInCourseChosen(string courseID) {
+    bool test = false;
+    for( int i = 0 ; i<nbCoursesChosen ; i++ ){
+        if(coursesChosen[i]->getID()==courseID){
+            test=true;
+        }
+    }
+    return test;
+}
