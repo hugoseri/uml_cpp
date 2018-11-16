@@ -4,7 +4,7 @@ interface.o: interface.cpp interface.h
 course.o: course.cpp course.h
 	g++ -c course.cpp
 
-student.o: student.cpp student.h
+student.o: student.cpp student.h 
 	g++ -c student.cpp
 
 main.o: main.cpp student.h interface.h course.h

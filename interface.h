@@ -7,7 +7,6 @@ using namespace std;
 
 class Interface{
 public:
-  Interface(){login = 0;}
 
   Student* log_in(); //function to log in the app
   int selectOpt(int opt = 0); //function to choose the adapted menu

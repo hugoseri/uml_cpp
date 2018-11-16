@@ -4,19 +4,18 @@ using namespace std;
 
 #include "interface.h"
 
-Student* log_in(){
-  bool logged = 0;
-  while(!logged){
+Student* Interface::log_in(){
+  student = NULL;
+  while(student == NULL){
     cout<<"Please enter your login and password.\n"<<endl;
     cout<<"login : ";
     string login;
-    cin<<login;
+    cin>>login;
     cout<<"password : ";
     string pwd;
-    cin<<pwd;
-    logged = checkIn(login,pwd);
+    cin>>pwd;
+    student = checkIn(login,pwd);
   }
-  student = getStudent(login);
 }
 
 int Interface::selectOpt(int opt){
@@ -68,10 +67,7 @@ int Interface::check(){
   cout<<"\n Select your action [0-3] : "<<endl;
   cin>>opt;
   if (opt == 3){
-    cout<<"Course to delete [ID]: ";
-    string id_course_del;
-    cin<<id_course_del;
-    student->deleteCourse(id_course_del);
+    removeCourse();
   }
   return opt;
 }
@@ -85,10 +81,21 @@ int Interface::browse(){
   cout<<"\n Select your action [0-3] : "<<endl;
   cin>>opt;
   if (opt == 2){
-    cout<<"Course to add [ID]: ";
-    string id_course_add;
-    cin<<id_course_add;
-    student->addCourse(id_course_add);
+    addCourse();
   }
   return opt;
+}
+
+void Interface::addCourse(){
+  cout<<"Course to add [ID]: ";
+  string id_course_add;
+  cin>>id_course_add;
+  student->addCourse(id_course_add);
+}
+
+void Interface::removeCourse(){
+  cout<<"Course to delete [ID]: ";
+  string id_course_del;
+  cin>>id_course_del;
+  student->deleteCourse(id_course_del);
 }
