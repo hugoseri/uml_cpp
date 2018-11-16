@@ -1,0 +1,11 @@
+Course_ID,Title,Teacher,Location
+CCMP2A-001,CPP,PU,S102
+CCMP2A-002,Database,OC,S103
+CCMP2A-003,Deep Learning,PM,HS002
+CCMP2A-004,Embedded System,MF,Z005
+CCMP2A-005,JAVA,SC,S101
+CCMP2A-006,Microelectronics,KT,G201
+CCMP2A-007,Network,TT,Z001
+CCMP2A-008,Production Management,CY,Amphi
+CCMP2A-009,Robtics,DD,S103
+CCMP2A-010,UML,JB,HS002
