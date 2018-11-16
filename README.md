@@ -27,7 +27,7 @@ This class is used to have a common form for every course.
 * Lists
 This class is used to keep all the students and courses existing, based on the *account.txt* and *course.txt* files.
 
-##C++ Source code
+## C++ Source code
 * main.cpp
 ```cpp
 
