@@ -4,12 +4,27 @@ void Lists::printCourses(Student stdLogged) {
     vector<Course>::iterator it;
     for(it = listCourses.begin(); it!=listCourses.end(); it++){
         if(stdLogged.courseIdInCourseChosen((it->getID())) ){
-            cout<<"Course already chosen"<<endl;
+            cout<<"(Course already chosen)"<<endl;
         }
         it->printCourse();
     }
 }
 
+Student* Lists::checkIn(string login, string pswd) {
+    Student *S=NULL;
+    vector<Student>::iterator it;
+    int indice=0;
+    for(it = listStudents.begin(); it!=listStudents.end(); it++){
+
+        if(it->getloginID()==login){
+            if(it->getloginPSD()==pswd){
+                S=&listStudents[indice];
+            }
+        }
+        indice++;
+    }
+    return S;
+}
 
 void Lists::lireFichierAccount() {
     ifstream fichier("Account.txt");

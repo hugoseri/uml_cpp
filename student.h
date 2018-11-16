@@ -18,6 +18,8 @@ public:
     void addCourses(Course *newCourse);
     void removeCourses(string IDtoRemove);
     string getName()const{return Name;}
+    string getloginID()const{return loginID;}
+    string getloginPSD()const{return loginPSD;}
     bool courseIdInCourseChosen(string courseID);
 private:
     string studentID;
