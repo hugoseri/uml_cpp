@@ -47,7 +47,7 @@ void Lists::lireFichierAccount() {
     string studentID, Name, firstName, loginID, loginPSD;
 
     if (fichier) {
-        fichier >> studentID >> firstName >> Name  >> loginID>>  loginPSD ;//On lis la première ligne (inutile pour l'algo)
+        fichier >> studentID >> firstName >> Name  >> loginID>>  loginPSD ;//reading title line (useless)
         //cout<<studentID<<" "<<firstName<<" " << Name<< " "<< loginID <<" "<<loginPSD<<endl;
 
         while (test) {
@@ -58,7 +58,7 @@ void Lists::lireFichierAccount() {
             } else test = false;
         }
     } else {
-        cout << "Le fichier Account.txt ne s'est pas ouvert"<<endl;
+        cout << "Account.txt file didn't opened correctly"<<endl;
     }
 }
 
@@ -70,7 +70,7 @@ void Lists::lireFichierCourses() {
     int Capacite;
 
     if (fichier) {
-        fichier >> CourseID >> Title >> Teacher >> Location >> CapaciteF;//On lis la première ligne (inutile pour l'algo)
+        fichier >> CourseID >> Title >> Teacher >> Location >> CapaciteF;//reading title line (useless)
         //cout<<CourseID<<" "<<Title<<" " << Teacher<< " "<< Location <<" "<<loginPSD<<endl;
 
         while (test) {
@@ -81,6 +81,6 @@ void Lists::lireFichierCourses() {
             } else test = false;
         }
     } else {
-        cout << "Le fichier Course.txt ne s'est pas ouvert"<<endl;
+        cout << "Course.txt file didn't opened correctly"<<endl;
     }
 }
