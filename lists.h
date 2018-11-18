@@ -23,7 +23,8 @@ class Lists{
 public:
     Lists(){lireFichierAccount(); lireFichierCourses();}
     Student* checkIn(string login, string pswd);
-    void printCourses(Student stdLogged);
+    Course* getCourse(string courseID);
+    void printCourses(Student* stdLogged);
 
 private:
     void lireFichierAccount();

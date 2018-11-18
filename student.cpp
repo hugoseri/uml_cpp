@@ -8,9 +8,9 @@ void Student::printChosenCourses() const {
     }
 }
 
-void Student::addCourses(Course *newCourse) {
+void Student::addCourses(Course* chosenCourse) {
     if(nbCoursesChosen<4){
-        coursesChosen[nbCoursesChosen]=newCourse;
+        coursesChosen[nbCoursesChosen]=chosenCourse;
         nbCoursesChosen++;
     }
     else{

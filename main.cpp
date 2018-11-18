@@ -8,10 +8,11 @@ using namespace std;
 #include "lists.h"
 
 int main(){
-  Lists L;
-  Interface myInterface;
 
-  //myInterface.log_in();
+  Lists L;
+  Interface myInterface(&L);
+
+  myInterface.log_in();
   myInterface.selectOpt();
 
   return 0;

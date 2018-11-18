@@ -1,9 +1,10 @@
 #include "lists.h"
 
-void Lists::printCourses(Student stdLogged) {
+void Lists::printCourses(Student* stdLogged) {
     vector<Course>::iterator it;
     for(it = listCourses.begin(); it!=listCourses.end(); it++){
-        if(stdLogged.courseIdInCourseChosen((it->getID())) ){
+      cout<<" "<<endl;
+        if(stdLogged->courseIdInCourseChosen((it->getID())) ){
             cout<<"(Course already chosen)"<<endl;
         }
         it->printCourse();
@@ -25,6 +26,20 @@ Student* Lists::checkIn(string login, string pswd) {
     }
     return S;
 }
+
+Course* Lists::getCourse(string courseID){
+  Course* wantedCourse = NULL;
+  vector<Course>::iterator it;
+  int indice = 0;
+  for(it = listCourses.begin(); it!=listCourses.end(); it++){
+    if (it->getID() == courseID){
+      wantedCourse = &listCourses[indice];
+    }
+    indice++;
+  }
+  return wantedCourse;
+}
+
 
 void Lists::lireFichierAccount() {
     ifstream fichier("Account.txt");

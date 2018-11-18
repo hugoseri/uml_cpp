@@ -15,9 +15,9 @@ class Student{
 public:
     Student( string stID="",string fNa="", string Na="",string logID="", string logPSD=""){studentID=stID;Name = Na; firstName=fNa; loginID=logID ;nbCoursesChosen=0; loginPSD=logPSD;}
     void printChosenCourses()const;
-    void addCourses(Course *newCourse);
+    void addCourses(Course* chosenCourse);
     void removeCourses(string IDtoRemove);
-    string getName()const{return Name;}
+    string getName()const{return firstName;}
     string getloginID()const{return loginID;}
     string getloginPSD()const{return loginPSD;}
     bool courseIdInCourseChosen(string courseID);
