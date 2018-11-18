@@ -1,6 +1,3 @@
-#ifndef UML_LIST_H
-#define UML_LIST_H
-
 #pragma once
 
 using namespace std;
@@ -33,5 +30,3 @@ private:
     vector<Student> listStudents;
     vector<Course> listCourses;
 };
-
-#endif

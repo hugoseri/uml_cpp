@@ -1,7 +1,3 @@
-
-#ifndef UML_STUDENT_H
-#define UML_STUDENT_H
-
 #pragma once
 
 using namespace std;
@@ -30,5 +26,3 @@ private:
     Course *coursesChosen[4];
     int nbCoursesChosen;
 };
-
-#endif

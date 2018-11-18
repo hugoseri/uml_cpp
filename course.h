@@ -1,7 +1,3 @@
-
-#ifndef UML_COURSE_H
-#define UML_COURSE_H
-
 #pragma once
 
 using namespace std;
@@ -24,5 +20,3 @@ private:
     int capacity;
     int nbRegisterStudent;
 };
-
-#endif
