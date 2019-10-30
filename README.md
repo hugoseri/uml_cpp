@@ -1,7 +1,7 @@
 # UML TP : Course Selection System
 ### Pierre SEITE - Hugo SERIEYS
 
-The objective of this TP is to design and implement a simplified course selection system.
+The objective of this TP is to design and implement a simplified course selection system using UML and C++.
 
 ## UML Diagrams
 
